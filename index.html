@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EB Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>EB Calculator</h2>
+  <div class="calculator">
+    <input type="number" id="previous" placeholder="Previous Reading">
+    <input type="number" id="current" placeholder="Current Reading">
+    <br>
+    <button onclick="calculateBill()">Calculate</button>
+    <button onclick="clearForm()">Clear</button>
+    <div id="result"></div>
+  </div>
+
+  <h3>⚡ EB Tariff Rates</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Units Range</th>
+        <th>Rate (₹ / Unit)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>0 – 100</td><td>Free (₹0)</td></tr>
+      <tr><td>101 – 200</td><td>₹2.25</td></tr>
+      <tr><td>201 – 400</td><td>₹4.50</td></tr>
+      <tr><td>401 – 500</td><td>₹6.00</td></tr>
+      <tr><td>501 – 600</td><td>₹8.00</td></tr>
+      <tr><td>601 – 800</td><td>₹9.00</td></tr>
+      <tr><td>801 – 1000</td><td>₹10.00</td></tr>
+      <tr><td>> 1000</td><td>₹11.00</td></tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+                            </html>
